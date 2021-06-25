@@ -1,0 +1,100 @@
+/**
+ * 业务公共样式
+*/
+
+/* 常规字体样色
+-------------------------- */
+.l-font-color-45{
+  color: rgba(0,0,0,.45);
+}
+
+.l-font-color-65{
+  color: rgba(0,0,0,.65);
+}
+
+.l-font-color-85{
+  color: rgba(0,0,0,.85);
+}
+
+/* 常规字体大小
+-------------------------- */
+.l-font-size-12{
+  font-size: 12px;
+}
+
+.l-font-size-14{
+  font-size: 14px;
+}
+
+.l-font-size-16{
+  font-size: 16px;
+}
+
+.l-font-size-18{
+  font-size: 18px;
+}
+
+.l-font-size-20{
+  font-size: 20px;
+}
+
+/* 蓝色字体 -- 表格操作栏
+-------------------------- */
+.l-font-color-blue{
+  color: #0063EA;
+}
+
+/* 二级标题
+-------------------------- */
+.l-second-title{
+  font-size: 16px;
+  color: rgba(0,0,0,0.85);
+  line-height: 16px;
+  font-weight: bold;
+}
+
+/* 信息布局
+-------------------------- */
+.l-text-pop{
+  margin-bottom: 10px;
+}
+
+.l-text-container{
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.l-text__right{
+  color: rgba(0,0,0,0.85);
+}
+
+/* 超出部分省略号显示 - 单行
+-------------------------- */
+.l-overflow-ellipsis-one{
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; // 溢出不换行
+}
+
+/* 超出部分省略号显示 - 多行
+-------------------------- */
+.l-overflow-ellipsis-many{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; // 显示的行
+}
+
+/* 展示标题
+-------------------------- */
+.l-title-intro{
+  color: #323233;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}

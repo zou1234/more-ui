@@ -1,0 +1,62 @@
+<template>
+    <div class="demo">
+        <div class="demo-module" id="haha">
+            <div id="test1" class="demo-module__item">标题1</div>
+            <div id="test2" class="demo-module__item">标题2</div>
+            <div id="test3" class="demo-module__item">标题3</div>
+        </div>
+        <page-nav class="demo-module__nav"
+                  :data="pageNav"
+                  :height="'200px'"
+                  :scroll-name="'haha'"
+        ></page-nav>
+    </div>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+          pageNav:[
+              {
+                  label: '测试测试测试1',
+                  name: 'test1',
+              },
+              {
+                  label: '测试测试测试2',
+                  name: 'test2',
+              },
+              {
+                  label: '测试测试测试3',
+                  name: 'test3',
+              },
+          ]
+      }
+    }
+  };
+</script>
+
+<style>
+    .demo{
+        position: relative;
+    }
+
+    .demo-module{
+        height: 600px;
+        width: 90%;
+        overflow-y: scroll;
+    }
+
+    .demo-module__item{
+        height: 800px;
+        margin-bottom: 20px;
+        background: rgba(89, 89, 89, .8);
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .demo-module__nav{
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+</style>

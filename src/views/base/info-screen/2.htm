@@ -1,0 +1,55 @@
+<template>
+    <info-screen :whole="'全部'" :data="nameList2"></info-screen>
+</template>
+<script>
+    export default {
+        data() {
+            return {
+                // 人员基本标签
+                nameList2: [
+                    {
+                        name: '01/01',
+                        checked: false
+                    },
+                    {
+                        name: '01/02',
+                        num: 0,
+                        checked: true
+                    },
+                    {
+                        name: '01/03',
+                        num: 99,
+                        checked: true
+                    },
+                    {
+                        name: '01/04',
+                        checked: false
+                    },
+                    {
+                        name: '01/05',
+                        num: 99,
+                        checked: true
+                    },
+                    {
+                        name: '01/06',
+                        checked: false
+                    },
+                    {
+                        name: '01/07',
+                        num: 99,
+                        checked: true
+                    },
+                    {
+                        name: '01/08',
+                        checked: true
+                    },
+                    {
+                        name: '01/09',
+                        num: 99,
+                        checked: true
+                    }
+                ]
+            }
+        }
+    };
+</script>

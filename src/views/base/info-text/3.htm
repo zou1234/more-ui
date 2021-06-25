@@ -1,0 +1,50 @@
+<template>
+    <info-text :data="infoText">
+        <template slot-scope="scope">
+            <div v-if="scope.data.label === '人员类别'">
+                <el-button type="primary" size="mini">{{scope.data.text}}</el-button>
+            </div>
+        </template>
+    </info-text>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+          // 人员基本标签
+          infoText: [
+              {
+                  label: "姓名",
+                  value: "张三"
+              },
+              {
+                  label: "身份证号",
+                  value: "350600199009090000"
+              },
+              {
+                  label: "列管原因",
+                  value: "人员有发生个人极端嫌疑，需要列管"
+              },
+              {
+                  label: "申请人",
+                  value: "某警官",
+              },
+              {
+                  label: "申请单位",
+                  value: "万兴路派出所",
+              },
+              {
+                  label: "申请时间",
+                  value: "2021-04-12",
+              },
+              {
+                  label: "人员类别",
+                  value: "人员有发生个人极端嫌疑，需要列管",
+                  text: '自定义按钮',
+                  slot: true
+              }
+          ]
+      }
+    }
+  };
+</script>

@@ -1,0 +1,37 @@
+<template>
+    <module-wrap
+            class="approval-page"
+            :defaultTabActive="'first'"
+            :tabData="tabData"
+            @handleClickTab="handleClickTab"
+    >
+        <div style="height: 200px"></div>
+    </module-wrap>
+</template>
+<script>
+    export default {
+        data() {
+            return {
+                tabData: [
+                    {
+                        label: '北京市 (128)',
+                        name: 'first'
+
+                    },{
+                        label: '上海市 (123)',
+                        name: 'second'
+
+                    },{
+                        label: '厦门市',
+                        name: 'three'
+                }],
+            }
+        },
+
+        methods:{
+            handleClickTab(active){
+
+            }
+        }
+    };
+</script>

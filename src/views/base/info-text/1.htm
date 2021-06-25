@@ -1,0 +1,70 @@
+<template>
+    <info-text :data="baseInfo" label-width="150px" :column="2"></info-text>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+          // 人员基本标签
+          baseInfo:[
+              {
+                  label: '曾用名',
+                  value: '张三',
+              },
+              {
+                  label: '户籍地派出所',
+                  value: '后溪派出所',
+              },
+              {
+                  label: '现住地派出所',
+                  value: '集美派出所',
+              },
+              {
+                  label: '联系电话',
+                  value: '189875487547',
+              },
+              {
+                  label: '宗教信仰',
+                  value: '无'
+              },
+              {
+                  label: '出生日期',
+                  value: '1999-12-11'
+              },
+              {
+                  label: '政治面貌',
+                  value: '团员'
+              },
+              {
+                  label: '自有车辆',
+                  value: '闽D12343'
+              },
+              {
+                  label: '婚姻状况',
+                  value: '已婚'
+              },
+              {
+                  label: '学历',
+                  value: '大专',
+              },
+              {
+                  label: '国籍',
+                  value: '中国'
+              },
+              {
+                  label: '工作所处',
+                  value: '集美'
+              },
+              {
+                  label: '兵役状况',
+                  value: '未服役'
+              },
+              {
+                  label: '性格特征',
+                  value: '孤僻'
+              }
+          ]
+      }
+    }
+  };
+</script>
