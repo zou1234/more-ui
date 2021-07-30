@@ -28,3 +28,26 @@ new Vue({
   render: h => h(App),
 
 }).$mount('#app');
+
+
+// 创建构造器
+var Profile = Vue.extend({
+    template: '<p style="background: red" v-if="shows">{{firstName}} {{lastName}} aka {{alias}}</p>',
+    data: function () {
+        return {
+            firstName: 'Walter',
+            lastName: 'White',
+            alias: 'Heisenberg',
+            shows: false
+        }
+    },
+    methods:{
+        show:function () {
+            this.shows = true;
+        }
+    }
+})
+// 创建 Profile 实例，并挂载到一个元素上。
+const instance = new Profile()
+instance.$mount('#mount-point')
+document.body.appendChild(instance.$el)

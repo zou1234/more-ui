@@ -5,14 +5,15 @@
 -->
 <template>
     <el-row class="info-text">
+        <!-- 每一项 -->
         <el-col class="info-text__item" v-for="(item, index) in data"
-                :span="getElColSpan(item)"
+                :span="item.span || getElColSpan(item)"
                 :key="index"
         >
-            <!-- label -->
+            <!-- 左边 -->
             <div class="info-text--label" :style="getLabelStyle(item)"> {{item.label}}：</div>
 
-            <!-- value -->
+            <!-- 右边 -->
             <div class="info-text--row">
                 <div v-if="$scopedSlots.default && item.slot">
                     <slot :data="item"></slot>
@@ -51,6 +52,7 @@
                 type: [Number, String]
             }
         },
+
 
         filters:{},
 
@@ -100,7 +102,11 @@
         },
 
         // 方法
-        methods: {},
+        methods: {
+            returnBackFn() {
+
+            }
+        },
 
         // 创建
         created() {

@@ -6,13 +6,12 @@
 <template>
     <div>
         <h1 class="l-title-intro">info-text文本列表</h1>
-
         <es-modular
                 title="基础用法"
                 :code="require('./1.htm').default"
                 :text="'label-width设置属性宽, data对象里label value 字段分别定义属性和属性名称，column属性定义列数'"
         >
-            <info-text :data="baseInfo" label-width="150px" :column="2"></info-text>
+            <info-text :data="baseInfo" label-width="150px" :column="3"></info-text>
         </es-modular>
 
         <es-modular
@@ -112,7 +111,8 @@
                     },
                     {
                         label: '性格特征',
-                        value: '孤僻'
+                        value: '孤僻',
+                        span: 24
                     }
                 ],
 
